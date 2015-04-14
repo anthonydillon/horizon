@@ -1,0 +1,52 @@
+body,
+.page-header {
+	font-family: Ubuntu, Arial, "libra sans", sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+  color: $brand-color;
+}
+
+.topbar,
+.topbar .switcher_bar .btn.btn-topnav {
+	background: $brand-color;
+}
+
+.topbar .switcher_bar .btn.btn-topnav {
+	border-color: $brand-color;
+	color: $white;
+
+	&:hover,
+	&:focus {
+		border-color: $topbar-link-hover;
+		background: $topbar-link-hover;
+		color: $white;
+	}
+}
+
+.topbar h1.brand a {
+	background-image: url("img/ubuntu.png");
+	background-position: left 4px;
+}
+
+.btn-primary {
+	background: $brand-color;
+	border-color: darken($brand-color, 5%);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .btn-primary.dropdown-toggle {
+	background: lighten($brand-color, 5%);
+	border-color: $brand-color;
+}
+
+.nav_accordion dt li a.active,
+.nav_accordion dd li a.active {
+	  border-left: 4px solid $brand-color;
+	  color: $brand-color;
+}
