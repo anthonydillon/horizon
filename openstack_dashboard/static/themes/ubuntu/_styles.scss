@@ -50,3 +50,28 @@ a:visited {
 	  border-left: 4px solid $brand-color;
 	  color: $brand-color;
 }
+
+#splash {
+	background: url("img/image-background-pattern.png");
+	background: linear-gradient(to right, rgba(100, 100, 100, 0.2), transparent), url("img/image-background-pattern.png");
+
+	.login {
+		background-color: $white;
+		background-image: url("img/logo-ubuntu-orange.png");
+		padding-top: 125px;
+		-moz-box-shadow: 0px 1px 3px 1px rgba(51,51,51,0.2);
+		-webkit-box-shadow: 0px 1px 3px 1px rgba(51,51,51,0.2);
+		box-shadow: 0px 1px 3px 1px rgba(51,51,51,0.2);
+
+		&:after {
+			content: "Openstack Dashboard";
+			position: absolute;
+			top: 70px;
+			color: $brand-color;
+			display: block;
+			text-align: center;
+			width: 100%;
+			font-size: 21px;
+		}
+	}
+}
