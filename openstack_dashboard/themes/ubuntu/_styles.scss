@@ -5,6 +5,7 @@
 body,
 .page-header {
 	font-family: Ubuntu, Arial, "libra sans", sans-serif;
+	font-weight: 300;
 }
 
 a,
@@ -19,9 +20,9 @@ a:visited {
 	background: $brand-color;
 }
 
-.topbar .switcher_bar .btn.btn-topnav {
+.navbar-default .navbar-nav > li > a {
 	border-color: $brand-color;
-	color: $white;
+	color: $white !important;
 
 	&:hover,
 	&:focus {
@@ -31,9 +32,30 @@ a:visited {
 	}
 }
 
-.topbar h1.brand a {
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+	background-color: $topbar-link-hover;
+	color: $white;
+}
+
+.navbar-brand {
 	background-image: url("../img/ubuntu.png");
-	background-position: left 4px;
+	background-position: 20px 4px;
+	background-repeat: no-repeat;
+
+	img {
+		opacity: 0;
+	}
+}
+
+.d3_pie_chart_usage .arc.inner {
+	fill: $brand-color;
+}
+
+.container-fluid {
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .btn-primary {
